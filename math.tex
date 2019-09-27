@@ -1,0 +1,39 @@
+% Math operator macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\bigO}[1]{\mathcal{O}\left(#1\right)}
+\newcommand{\clip}{\mathrm{clip}}
+\newcommand{\cov}[1]{\mathrm{Cov}(#1)}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\E}[2]{\mathbb{E}_{#1} \left[ #2 \right]} % expectation
+\newcommand{\norm}[1]{\|#1\|} % for ordinary vectors
+\newcommand{\normm}[1]{\left\|#1\right\|}
+\newcommand{\partdiff}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\partdiffb}[2]{\frac{\partial #2}{\partial #1}}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\prob}[1]{\mathrm{Pr}\{#1\}}
+\newcommand{\realset}{\mathbb{R}}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\setname}[1]{\mathcal{#1}}
+\newcommand{\setsize}[1]{|\mathcal{#1}|}
+\newcommand{\trace}{\mathrm{trace}}
+\newcommand{\var}{\mathrm{var}}
+
+% Math symbol macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\eqset}{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny\sffamily set}}}{=}}}
+\newcommand{\eqdef}{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny\sffamily def}}}{=}}}
+\newcommand{\widebar}[1]{\overline{#1}}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% https://tex.stackexchange.com/questions/2607/spacing-around-left-and-right/
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
