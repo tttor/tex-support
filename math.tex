@@ -1,3 +1,5 @@
+% https://tex.stackexchange.com/questions/36175/what-do-newcommand-renewcommand-and-providecommand-do-and-how-do-they-differ
+
 % Math operator macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\bigO}[1]{\mathcal{O}\left(#1\right)}
@@ -10,7 +12,7 @@
 \newcommand{\partdiff}[1]{\frac{\partial}{\partial #1}}
 \newcommand{\partdiffb}[2]{\frac{\partial #2}{\partial #1}}
 \newcommand{\ud}{\mathrm{d}}
-\newcommand{\piset}[1]{\Pi^{\mathrm{#1}}}
+\newcommand{\piset}[1]{\Pi_{\mathrm{#1}}}
 \newcommand{\prob}[1]{\mathrm{Pr}\{#1\}}
 \newcommand{\realset}{\mathbb{R}}
 \newcommand{\real}[1]{\mathbb{R}^{#1}}
@@ -26,12 +28,6 @@
 \newcommand{\widebar}[1]{\overline{#1}}
 \DeclareMathOperator*{\argmin}{\arg\!\min}
 \DeclareMathOperator*{\argmax}{\arg\!\max}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{definition}{Definition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{proposition}{Proposition}[section]
 \renewcommand\qedsymbol{$\blacksquare$}
 
 % https://tex.stackexchange.com/questions/2607/spacing-around-left-and-right/
