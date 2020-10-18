@@ -5,6 +5,10 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 
+
+% MDP distrib
+\newcommand{\isd}{p_{\mathsf{s}_0}} % isd: init state distrib
+
 % Math operator macros %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\abs}[1]{\left|#1\right|}
 
@@ -54,8 +58,10 @@
 
 \newcommand{\tmax}{t_{\mathrm{max}}}
 \newcommand{\tmaxrv}{T_{\mathrm{max}}} % rv: random variable
-\newcommand{\tmaxhat}{\hat{t}_{\mathrm{max}}} % hat as an approx to infinity horizon
+\newcommand{\tmaxhat}{\hat{t}_{\mathrm{max}}} % training budget, approximating the infinity horizon
 \newcommand{\tepmax}{\hat{t}_{\mathrm{max}}^{\mathrm{xep}}} % xep: experiment episodes
+\newcommand{\tepmaxi}{\hat{t}_{\mathrm{max}}^{\mathrm{xep}(i)}} % xep: experiment episodes
+\newcommand{\tmaxeps}{\hat{t}_{\mathrm{max}}^{\epsilon}}
 \newcommand{\tep}{t_{\mathrm{xep}}}
 \newcommand{\txep}{t_{\mathrm{xep}}}
 
