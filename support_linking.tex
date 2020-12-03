@@ -1,0 +1,17 @@
+\usepackage{url}            % simple URL typesetting
+
+% https://tex.stackexchange.com/questions/15971/bibliography-with-page-numbers
+\usepackage[hidelinks, backref=page]{hyperref}
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+  \ifcase #1 (Not cited)
+  \or        (p#2)
+  \else      (p#2)
+  \fi
+}
+\hypersetup{
+  colorlinks   = true,
+  urlcolor     = blue,
+  linkcolor    = blue,
+  citecolor   = blue
+}

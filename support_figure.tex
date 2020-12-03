@@ -4,9 +4,6 @@
 \usetikzlibrary{positioning, shapes.geometric}
 \definecolor{stateblue}{cmyk}{0.96,0,0,0}
 
-\usepackage{graphicx}
-\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-
 % https://tex.stackexchange.com/questions/333249/controlling-subfigure-captions-and-subfigure-placement
 % https://tex.stackexchange.com/questions/13150/subfigures-with-tikz-on-the-same-line
 % \usepackage{subfigure} % clash with `subcaption`
@@ -14,3 +11,8 @@
 
 % https://tex.stackexchange.com/questions/110513/unknown-graphics-extension-1-png
 \usepackage{grffile}
+
+
+\usepackage{subcaption}
+\usepackage{graphicx} % Allows including images
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
