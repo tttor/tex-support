@@ -1,5 +1,9 @@
 # tex-support
 
+## arxiv
+* We only accept file names containing the characters: a-z A-Z 0-9 _ + - . , =
+* https://github.com/google-research/arxiv-latex-cleaner
+
 ## helper
 * http://detexify.kirelabs.org/classify.html
 * https://verbosus.com/bibtex-style-examples.html
