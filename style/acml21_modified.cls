@@ -1,3 +1,6 @@
+% MODIFICATION, including
+  % 1) subfigure
+  % 2) math env: thm, corr
 %%
 %% This is file `jmlr.cls',
 %% generated with the docstrip utility.
@@ -765,70 +768,70 @@ Keywords:} \ignorespaces}%
 
 \newcommand*{\altdescriptionlabel}[1]{\normalfont\bfseries #1\hfill}
 \newcommand*{\mailto}[1]{\texttt{#1}}
-\newcounter{subfigure}
-\@addtoreset{subfigure}{figure}
-\renewcommand*{\thesubfigure}{\alph{subfigure}}
-\renewcommand*{\p@subfigure}{\expandafter\@p@subfigure}
-\newcommand*{\@p@subfigure}[1]{%
-  \protect\@subfigurelabel{\thefigure}{\thesubfigure}%
-}
-\newcommand*\@subfigurelabel[2]{#1\subfigurelabel{#2}}
-\newcommand*\@subfigref[1]{%
-  {%
-    \def\@subfigurelabel##1##2{\subfigurelabel{##2}}%
-    \ref{#1}%
-  }%
-}
-\newcommand*{\subfigref}[1]{%
-  \let\@objectname\@empty
-  \def\@objectref{}%
-  \let\@prevsep\@empty
-  \@for\@thislabel:=#1\do{%
-    \toks@{\@prevsep}%
-    \protected@edef\@objectref{\@objectref\the\toks@
-      \protect\@subfigref{\@thislabel}}%
-      \ifx\@objectname\@empty
-\let\@objectname\@nil
-      \else
-\let\@objectname\relax
-        \let\@prevsep\@jmlr@reflistsep
-      \fi
-  }%
-  \ifx\@objectname\relax
-    \let\@prevsep\@jmlr@reflistlastsep
-  \fi
-  \@objectref
-}
-\newcommand*{\subfigurelabel}[1]{(\emph{#1})}
-\newsavebox\@subfloatcapbox
-\newsavebox\@subfloatcontsbox
-\newcommand*{\subfigure}[1][]{%
-  \bgroup
-  \def\@subfigcap{#1}%
-  \@subfigure
-}
-\newcommand*{\@subfigure}[2][b]{%
-  \advance\c@figure by 1\relax
-  \refstepcounter{subfigure}%
-  \sbox\@subfloatcapbox{\subfigurelabel{\thesubfigure}%
-  \ifx\@subfigcap\@empty
-  \else
-    \space\@subfigcap
-  \fi}%
-  \sbox\@subfloatcontsbox{#2}%
-  \settowidth{\@tempdima}{\usebox\@subfloatcontsbox}%
-  \settowidth{\@tempdimb}{\usebox\@subfloatcapbox}%
-  \ifdim\@tempdimb>\@tempdima
-    \settowidth\@tempdimb{\subfigurelabel{\thesubfigure}\space}%
-    \addtolength{\@tempdima}{-\@tempdimb}%
-    \sbox\@subfloatcapbox{\subfigurelabel{\thesubfigure}\space
-      \parbox[t]{\@tempdima}{\@subfigcap}}%
-  \fi
-  \begin{tabular}[#1]{@{}c@{}}%
-  \usebox\@subfloatcontsbox\\\usebox\@subfloatcapbox
-  \end{tabular}%
-  \egroup
-}
+% \newcounter{subfigure}
+% \@addtoreset{subfigure}{figure}
+% \renewcommand*{\thesubfigure}{\alph{subfigure}}
+% \renewcommand*{\p@subfigure}{\expandafter\@p@subfigure}
+% \newcommand*{\@p@subfigure}[1]{%
+%   \protect\@subfigurelabel{\thefigure}{\thesubfigure}%
+% }
+% \newcommand*\@subfigurelabel[2]{#1\subfigurelabel{#2}}
+% \newcommand*\@subfigref[1]{%
+%   {%
+%     \def\@subfigurelabel##1##2{\subfigurelabel{##2}}%
+%     \ref{#1}%
+%   }%
+% }
+% \newcommand*{\subfigref}[1]{%
+%   \let\@objectname\@empty
+%   \def\@objectref{}%
+%   \let\@prevsep\@empty
+%   \@for\@thislabel:=#1\do{%
+%     \toks@{\@prevsep}%
+%     \protected@edef\@objectref{\@objectref\the\toks@
+%       \protect\@subfigref{\@thislabel}}%
+%       \ifx\@objectname\@empty
+% \let\@objectname\@nil
+%       \else
+% \let\@objectname\relax
+%         \let\@prevsep\@jmlr@reflistsep
+%       \fi
+%   }%
+%   \ifx\@objectname\relax
+%     \let\@prevsep\@jmlr@reflistlastsep
+%   \fi
+%   \@objectref
+% }
+% \newcommand*{\subfigurelabel}[1]{(\emph{#1})}
+% \newsavebox\@subfloatcapbox
+% \newsavebox\@subfloatcontsbox
+% \newcommand*{\subfigure}[1][]{%
+%   \bgroup
+%   \def\@subfigcap{#1}%
+%   \@subfigure
+% }
+% \newcommand*{\@subfigure}[2][b]{%
+%   \advance\c@figure by 1\relax
+%   \refstepcounter{subfigure}%
+%   \sbox\@subfloatcapbox{\subfigurelabel{\thesubfigure}%
+%   \ifx\@subfigcap\@empty
+%   \else
+%     \space\@subfigcap
+%   \fi}%
+%   \sbox\@subfloatcontsbox{#2}%
+%   \settowidth{\@tempdima}{\usebox\@subfloatcontsbox}%
+%   \settowidth{\@tempdimb}{\usebox\@subfloatcapbox}%
+%   \ifdim\@tempdimb>\@tempdima
+%     \settowidth\@tempdimb{\subfigurelabel{\thesubfigure}\space}%
+%     \addtolength{\@tempdima}{-\@tempdimb}%
+%     \sbox\@subfloatcapbox{\subfigurelabel{\thesubfigure}\space
+%       \parbox[t]{\@tempdima}{\@subfigcap}}%
+%   \fi
+%   \begin{tabular}[#1]{@{}c@{}}%
+%   \usebox\@subfloatcontsbox\\\usebox\@subfloatcapbox
+%   \end{tabular}%
+%   \egroup
+% }
 \newcounter{subtable}
 \@addtoreset{subtable}{table}
 \renewcommand*{\thesubtable}{\alph{subtable}}
