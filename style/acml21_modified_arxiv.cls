@@ -44,7 +44,7 @@
 %% First editor:
 %% Second editor:
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jmlr}[2012/02/25 v1.13 (NLCT) Journal of Machine Learning Research]
+% \ProvidesClass{jmlr}[2012/02/25 v1.13 (NLCT) Journal of Machine Learning Research]
 \RequirePackage{xkeyval}
 \providecommand*{\jmlrprehyperref}{}
 \newif\if@openright
