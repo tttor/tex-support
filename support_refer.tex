@@ -15,9 +15,11 @@
 
 \newcommand{\defref}[1]{Def~\ref{#1}}
 
-\newcommand{\eqreff}[1]{Eqn~\ref{#1}}
-\newcommand{\eqreffb}[2]{Eqn~\ref{#1} and~\ref{#2}}
-\newcommand{\eqreffand}[2]{Eqn~\ref{#1} and~\ref{#2}}
+% \newcommand{\eqreff}[1]{Eqn~\ref{#1}}
+\newcommand{\eqreff}[1]{\eqref{#1}}
+% \newcommand{\eqreffb}[2]{Eqn~\ref{#1} and~\ref{#2}}
+% \newcommand{\eqreffand}[2]{Eqn~\ref{#1} and~\ref{#2}}
+\newcommand{\eqreffand}[2]{(\ref{#1},~\ref{#2})}
 \newcommand{\eqrefand}[2]{(\ref{#1},~\ref{#2})}
 
 \newcommand{\figref}[1]{Fig~\ref{#1}}
